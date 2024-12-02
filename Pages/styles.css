@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+.div1 {
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    top: 5px;
+    left: 50px;
+}
+
+.div2 {
+    position: absolute;
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    top: 5px;
+    left: 300px;
+}
+
+.div3 {
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    top: 5px;
+    left: 450px;
+}
