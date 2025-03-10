@@ -78,3 +78,14 @@ a {
     color: black;
     font-family: monospace;
 }
+
+.nfaq {
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    top: 1500px;
+    right: 50px;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
