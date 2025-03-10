@@ -86,6 +86,9 @@ a {
 }
 
 .nfaq {
+    position: absolute;
+    top: 1400px;
+    left: 50px;
     background-color: whitesmoke;
     border-radius: 20px;
     text-align: center;
