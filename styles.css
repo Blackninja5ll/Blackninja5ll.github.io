@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 300vh;
+}
+
+.top-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background-color: wheat;
+    gap: 300px;
+    font-size: x-large;
+    z-index: 2;
+}
+
+.side-img {
+    position: absolute;
+    border-radius: 20px;
+    top: 200px;
+    width: 600px;
+    height: 600px;
+}
+
+.description {
+    position: absolute;
+    top: 800px;
+    left: 10px;
+}
+
+.about-me {
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    top: 200px;
+    right: 50px;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
+
+.about-me>h1 {
+    font-size: 50px;
+}
+
+.about-me>p {
+    font-size: 30px;
+}
+
+.sounds {
+    position: absolute;
+    top: 1000px;
+}
+
+.soundBubble {
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 10px;
+    height: 170px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.soundBubble a {
+    display: block;
+    margin-bottom: 10px; 
+}
+
+a {
+    color: black;
+    font-family: monospace;
+}
