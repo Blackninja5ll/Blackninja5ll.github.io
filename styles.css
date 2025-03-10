@@ -79,13 +79,16 @@ a {
     font-family: monospace;
 }
 
-.nfaq {
+.nfaqMain {
     position: absolute;
+    top: 1400px;
+    left: 50px;
+}
+
+.nfaq {
     background-color: whitesmoke;
     border-radius: 20px;
-    top: 1500px;
-    right: 50px;
+    text-align: center;
     width: 800px;
     height: 600px;
-    text-align: center;
 }
