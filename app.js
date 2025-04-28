@@ -5,7 +5,7 @@ let lon = null;
 let temp = null;
 let location = null;
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { 
   temp = document.getElementById("temp");
   location = document.getElementById("location");
 });
