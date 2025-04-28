@@ -1,4 +1,4 @@
-const apiKey = "ec6b5dbeb73ed11480fd497a5d34d81b"; // replace with your actual key
+const apiKey = "ea72898441976fbdf665321ee6e2be73"; // replace with your actual key
 const city = "Stockholm";
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
