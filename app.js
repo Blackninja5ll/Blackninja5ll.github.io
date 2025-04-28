@@ -1,29 +1,36 @@
 const apiKey = "ea72898441976fbdf665321ee6e2be73"; // put your real API key here
 
-let loaded = false;
+let lat = null;
+let lon = null;
+let temp = null;
+let location = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-  loaded = true;
+  temp = document.getElementById("temp");
+  location = document.getElementById("location");
 });
 
-const startChecker = () => {
-  if(loaded) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const lat = position.coords.latitude;
-        const lon = position.coords.longitude;
-  
-        console.log("Your location:", lat, lon);
-  
-        setInterval(() => {
-          checkWeather(lat, lon);
-        }, 5000);
-      },
-      (error) => {
-        console.error("Error getting location:", error);
-      }
-    );
-  }
+const getLocationByIP = () => {
+  fetch("http://ipwho.is/")
+    .then((res) => res.json())
+    .then((res) => {
+      lat = res.latitude;
+      lon = res.longitude;
+      checkWeather();
+    });
+}
+
+const getLocationByGPS = () => {
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      lat = position.coords.latitude;
+      lon = position.coords.longitude;
+      checkWeather();
+    },
+    (error) => {
+      console.error("Error getting location:", error);
+    }
+  );
 }
 
 const checkWeather = (lat, lon) => {
@@ -40,3 +47,5 @@ const checkWeather = (lat, lon) => {
       console.error("Error fetching weather data:", error);
     });
 }
+
+getLocationByIP();
