@@ -1,4 +1,4 @@
-const apiKey = "ea72898441976fbdf665321ee6e2be73"; // put your real API key here
+const apiKey = "YOUR_API_KEY"; // put your real API key here
 
 // Step 1: Get user's location
 navigator.geolocation.getCurrentPosition(
@@ -9,7 +9,7 @@ navigator.geolocation.getCurrentPosition(
     console.log("Your location:", lat, lon);
 
     // Step 2: Fetch weather for that location
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=se`;
 
     fetch(url)
       .then(response => response.json())
